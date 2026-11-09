@@ -12,12 +12,21 @@
         let shape = prompt("What is the shape you want to calculate the perimeter?")
         if (shape == "rectangle") {
             //write here your code for the rectangle
-
+        let w=parseFloat(prompt("width?"));
+        let h=parseFloat(prompt("height?"));
+        let area=w*h;
+        document.getElementById("calcText").innerHTML = "A = 2 * 1 + 2 * w" + "=" + area;
+        document.getElementById("calcText").style.color="red";
+        document.getElementById("ImageShape").src= "Pictures/Rectangle_Perimeter.png";
         }
         else if (shape == "circle") {
             //write here your code for the circle
-            
-        }
-    </script>
+        let r=parseFloat(prompt("radius?"));
+        let pi=Math.PI;
+        document.getElementById("calcText").innerHTML = "A = 2 * pi * r" + "=" + area;
+        document.getElementById("calcText").style.color="blue";
+        document.getElementById("ImageShape").src= "Pictures/Circle_Perimeter.png";
+       }
+        </script>
 </body>
 </html>
